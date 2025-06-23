@@ -33,5 +33,10 @@ export class CadastroComponent {
 
   salvar(){
     this.service.salvar(this.cliente);
+    console.log('Cliente salvo:', this.cliente);
+  }
+
+  limparFormulario(form: any) {
+    form.resetForm(); // limpa o form e o model associado
   }
 }
